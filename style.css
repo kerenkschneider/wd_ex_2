@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'Hadassa-heavy';
+    src: url("assets/fonts/hadassah/HadassahFriedlaender-Heavy.woff2") format("woff2");    
+}
+
+@font-face {
+    font-family: 'narkiss-regular';
+    src: url("assets/fonts/narkiss/narkissblocktrial-regular.woff2") format("woff2");    
+}
+
+/* general containers */
+
+.menu_container {
+    width: 150px; 
+    padding: 25px 25px;
+
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 400px;
+
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    
+}
+
+.main_container {
+    padding: 5px 25px;
+
+    position: fixed;
+    right: 150px;
+    left: 55px;
+    bottom: 400px;
+    top: 0;
+}
+
+.logo_container {
+    width: 55px; 
+    padding: 10px 25px;
+    
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.articles_container {
+    position: fixed;
+    top: 750px;
+}
+
+/* bezalel logo */
+
+.logo_image {
+    width: 40px; 
+}
+
+/* right panel */
+
+.header{
+    font-family: 'Hadassa-heavy', sans-serif;;
+    font-size: 20px;
+    color: blue;
+}
+
+.sub_header{
+    font-family: 'narkiss-regular', sans-serif;;
+    font-size: 12px;
+    line-height: 1.3em; 
+    margin-top: -12px;
+    color: blue;
+}
+
+/* main panel */
+
+.main_header{
+    font-family: 'Hadassa-heavy', sans-serif;
+    font-size: 40px;
+    padding: 0px 25px;
+    margin-bottom: -20px;
+
+    color: blue;
+}
+
+.text_containter{
+    display: flex;
+}
+
+.main_section{
+    width: 550px; 
+    max-width: 550px;
+    min-width: 420px;
+    padding: 0px 25px;
+
+    font-family: 'narkiss-regular', sans-serif;;
+    font-size: 16px;
+    line-height: 1.3em; 
+    margin-top: -12px;
+    color: blue;
+}
+
+
+/* articles panel */
+.article_row{
+    display: flex;
+}
+
+.article_continer{
+    height: 150px; 
+    display: flex;
+}
+
+.article_text_continer{
+    height: 150px; 
+    margin-top: -35px;
+}
+
+.article_name{
+    padding: 0px 10px;
+
+    font-family: 'Hadassa-heavy', sans-serif;;
+    font-size: 30px;
+    color: blue;
+}
+
+.article_auther{
+    padding: 0px 10px;
+
+    font-family: 'narkiss-regular', sans-serif;;
+    font-size: 16px;
+    line-height: 1.3em; 
+    color: blue;
+}
+.article_image {
+    height: 150px; 
+}
+
+/* articles width */
+
+.art_1{
+    width: 220px;
+}
+
+.art_2{
+    width: 380px;
+}
+
+.art_3{
+    width: 150px;
+}
+
+.art_4{
+    width: 350px;
+}
+
+.art_5{
+    width: 220px;
+}
+
+.art_6{
+    width: 220px;
+}
+
+.art_7{
+    width: 460px;
+}
+
+.art_8{
+    width: 270px;
+}
+
+.art_9{
+    width: 220px;
+}
+
+.art_10{
+    width: 220px;
+}
+
+/* moving article */
+
+.cyclic-object {
+    width: 7200px;
+    height: 50px;
+    animation: cyclicMovement 50s linear infinite;
+  }
+  
+  @keyframes cyclicMovement {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(50%); }
+    50% { transform: translateX(100%); }
+    75% { transform: translateX(50%); }
+    100% { transform: translateX(0); }
+  }
