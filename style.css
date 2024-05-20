@@ -46,7 +46,7 @@
     width: 55px; 
     padding: 10px 25px;
     
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     bottom: 400px;
@@ -57,14 +57,22 @@
 }
 
 .articles_container {
-    position: fixed;
+    position: absolute;
     top: 750px;
+    padding-top: 10px;
 }
 
 /* bezalel logo */
 
 .logo_image {
     width: 40px; 
+    display: block; 
+}
+
+@media screen and (max-width: 800px) {
+    .logo_image {
+        display: none; /* Image will be hidden when screen width is 600px or less */
+    }
 }
 
 /* right panel */
@@ -189,6 +197,8 @@
 .article_continer{
     height: 150px; 
     display: flex;
+    background-color: white;
+    padding-top: 20px;
 }
 
 .article_text_continer{
